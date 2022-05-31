@@ -1,0 +1,69 @@
+$whitecolor: #dce1ed;
+$hovercolor: rgb(203, 116, 15);
+$transition: All 0.5s ease;
+$boxColor:#074311;
+$backgroundColor: #010d03;
+$buttonTransform: scale(1.1);
+$tenpx: 10px;
+// --------------------------------
+
+@mixin displayColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin displayRow {
+    display: flex;
+    align-items: center;
+}
+
+@mixin button {
+    padding: 5px $tenpx *3;
+    min-height: $tenpx *5.5;
+    border: 1px solid $whitecolor;
+    border-radius: $tenpx *1.5;
+    color: $whitecolor;
+    @include displayRow;
+    transition: $transition;
+}
+
+@mixin rigthIcon {
+    margin-left: $tenpx *2.5;
+    width: $tenpx *2.4;
+    height: $tenpx *2.4;
+}
+
+@mixin textTitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+@mixin decoration1 {
+    width: 95%;
+    padding: 1.5%;
+    margin: 0 auto;
+    background-color: $whitecolor;
+}
+
+@mixin decoration2 {
+    width: 90%;
+    padding: 1.5%;
+    margin: 0 auto;
+    background-color: grey;
+}
+
+@mixin buttonText {
+    font-size: $tenpx *1.8;
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+@mixin logo {
+    font-size: $tenpx *3;
+    font-weight: 700;
+    line-height: 1.2;
+}
